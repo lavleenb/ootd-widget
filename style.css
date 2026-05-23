@@ -1,0 +1,144 @@
+* {
+    animation: slideIn 0.5s;
+}
+@keyframes slideIn {
+    from {transform: translateY(0.5rem);
+        opacity: 50%;
+    }
+    to {transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+body {
+    background-color: rgb(221, 229, 199);
+}
+
+.overall-wrapper {
+    display: flex;
+}
+
+.title-aside {
+    margin-left: 100px;
+    width: 10%;
+    align-self: center;
+}
+.title-aside h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.main-wrapper {
+    display: flex;
+    margin-left: 1in;
+}
+
+.container {
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.base-layer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 42rem;
+}
+
+.outfit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42rem;
+}
+
+#clothin-grid {
+    justify-self: center;
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 75px;
+    align-self: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3.5in;
+    left: 1in;
+}
+
+.clothing-btn {
+    box-shadow: 0 0 5px 0 rgb(166, 173, 148);
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: none;
+    width: 167px;
+    height: 217px;
+    cursor: pointer;
+}
+.clothing-btn :hover {
+    background-color: rgb(166, 173, 148);
+}
+
+.clothing {
+    width: 133px;
+}
+
+.modal {
+    box-shadow: 0 0 5px 0 rgb(166, 173, 148);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    width: 900px;
+    display: none;
+    justify-self: center;
+    position: absolute;
+    z-index: 0;
+    align-self:center;
+    top: 300;
+}
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-close-btn {
+    border: none;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-left-box {
+    width: 40%;
+    padding: 50px;
+}
+.modal-image {
+    width: 70%;
+}
+.modal-right-box {
+    width: 50%;
+    justify-items: left;
+}
+.modal-right-box h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+}
+.modal-right-box p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}
