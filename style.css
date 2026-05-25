@@ -14,28 +14,21 @@ body {
     background-color: rgb(221, 229, 199);
 }
 
-.overall-wrapper {
-    display: flex;
-}
-
-.title-aside {
-    margin-left: 100px;
-    width: 10%;
-    align-self: center;
-}
-.title-aside h1 {
+header {
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+    justify-self: center;
 }
 
 .main-wrapper {
+    padding: 0;
+    margin: 0;
     display: flex;
-    margin-left: 1in;
 }
 
 .container {
     width: 50%;
-    padding: 5px;
     box-sizing: border-box;
 }
 
@@ -70,7 +63,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 3.5in;
-    left: 1in;
+    margin-right: 1in;
 }
 
 .clothing-btn {
